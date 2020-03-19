@@ -1,7 +1,7 @@
-def turn(board)
+def turn(board, index)
  puts "Please enter 1-9:"
 if !valid_move?(board, index)
-puts turn(board)
+puts turn(board, index)
  end
 end
 
