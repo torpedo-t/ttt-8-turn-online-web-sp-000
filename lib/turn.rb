@@ -1,9 +1,9 @@
 def turn(board)
  puts "Please enter 1-9:"
-if !valid_move(0, 8)
+if !valid_move(board, index)
  turn
  end
-end 
+end
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
