@@ -1,6 +1,6 @@
 def turn(board)
  puts "Please enter 1-9:"
- input = gets.strip
+ input = gets.strip.to_i
 if input = !valid_move?(board, index)
 puts turn(board, index)
  end
