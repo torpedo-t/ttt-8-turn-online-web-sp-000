@@ -6,6 +6,7 @@ if !valid_move?(board, index)
 turn(board)
 else
 move(board, index)
+display_board(board)
  end
 end
 
