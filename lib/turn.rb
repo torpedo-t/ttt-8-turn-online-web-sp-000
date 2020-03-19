@@ -1,8 +1,11 @@
 def turn(board)
  puts "Please enter 1-9:"
  input = gets.strip.to_i
-if input = !valid_move?(board, index)
-puts turn(board)
+ index = input_to_index(input)
+if !valid_move?(board, index)
+turn(board)
+else
+move(board, index)
  end
 end
 
